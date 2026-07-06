@@ -6,10 +6,10 @@ import { verifyToken } from "../../middleware/auth.middleware";
 const router = Router();
 
 // Create Company
-router.post("/", verifyToken, companyController.createCompany);
+router.post("/new", verifyToken, companyController.createCompany);
 
 // Get All Companies
-router.get("/", verifyToken, companyController.getAllCompanies);
+router.get("/all", verifyToken, companyController.getAllCompanies);
 
 // Get Company By ID
 router.get("/:id", verifyToken, companyController.getCompanyById);
