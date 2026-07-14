@@ -8,11 +8,13 @@ import userRoutes from "../users/user.routes";
 import roleRouter from "../roles/role.routes";
 import companyRouter from "../company/company.routes";
 import leadRouter from "../leads/lead.routes";
+import taskRouter from "../tasks/task.routes";
 
 router.use("/auth", authRoutes);
 router.use("/user", userRoutes);
 router.use("/role", roleRouter);
 router.use("/company", companyRouter);
 router.use("/leads", leadRouter);
+router.use("/task",taskRouter)
 
 export default router;
