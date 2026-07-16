@@ -23,7 +23,7 @@ export const createLead = async (data: ICreateLead) => {
             source,
             notes
         )
-            VALUES ($!,$2,$3,$4,$5,$6,$7)
+            VALUES ($1,$2,$3,$4,$5,$6,$7)
             RETURNING *;
         `,
         [

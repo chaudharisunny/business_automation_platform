@@ -5,7 +5,7 @@ export const createTask = async (data: IcreateTask) => {
     const {lead_id,assigned_to,title,description,priority,due_date}=data;
 
     const result = await pool.query(
-        `INSERT INTO task (
+        `INSERT INTO tasks (
         lead_id,
         assigned_to,
         title,

@@ -15,11 +15,13 @@ export const createWorkflow = async (
       data: workflow,
     });
   } catch (error: any) {
-    res.status(400).json({
-      success: false,
-      message: error.message,
-    });
-  }
+  console.error("Workflow Error:", error);
+
+  res.status(400).json({
+    success: false,
+    message: error.message,
+  });
+}
 };
 
 // Get All Workflows
