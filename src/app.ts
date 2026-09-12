@@ -3,7 +3,7 @@ import "dotenv/config";
 import express, { Request, Response } from "express";
 import cors from "cors";
 
-const PORT = 5000;
+const PORT = Number(process.env.PORT) || 5000;
 
 import { pool } from "./config/db";
 import routes from "./modeules/routes";
